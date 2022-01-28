@@ -1,0 +1,13 @@
+  //Finding 2nd maximum element in an array 
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    arr.sort()
+    print(arr[(arr.index(max(arr)))-1])
+
+//Finding maximum element in a given array 
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    arr.sort()
+    print(arr[(arr.index(max(arr)))])
