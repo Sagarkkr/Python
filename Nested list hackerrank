@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    dic={}
+    l=list()
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        if score in dic:
+            dic[score].append(name)
+        else:
+            dic[score]=[name]
+        if score not in l:
+            l.append(score)
+    m=min()  //to calculate first minimum and remove,using the remove function.
+    l.remove(m)
+    m=min() //to calculate the 2nd minimum.
+    dic[m].sort()
+    for i in dic[m]:
+        print(i)
