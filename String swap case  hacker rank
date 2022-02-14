@@ -1,0 +1,11 @@
+def swap_case(s):
+    x=""
+    for c in (s):  // To iterate through all the characters in string
+        if c.isupper():
+            c=c.lower() //If character is in upper case it will be changed into lower case.
+        else:
+            c=c.upper() //If character is in lower case it will be converted into upper case.
+        x+="".join(c)
+    return x
+
+if __name__ == '__main__':
